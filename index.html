@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="js/caroufredsel.js"></script>
+	<link href="style.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+    
+<body>
+    <script src="script.js">
+        
+        
+    </script>
+   
+        <div id="menubar" class="menubar">
+               <div id="logo" class="logo"><img src="logo.png" ></div>
+            	<div class="menu" name><ul>
+        		<li><a href="#HTML-intro">Home</a></li>
+        		<li><a href="aboutMe.html">About us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+               
+                <li> <a id="login" href="#">sign in</a><i class="fas fa-lock-open" style=" color:white ;"></i></li>   
+                    </ul></div>
+        </div>
+    <div class="arrowup"></div>
+    <div class="login-form">
+        <form name="myForm"  >
+            <label>Username</label><br>
+            <input id="ussername" type="text" placeholder="username " required name="fname"><br>
+            <label>Password</label><br>
+            <input id="password" type="password" placeholder="password (min 8)" required name="password">
+            <br><a id="conferm" ></a><br>
+            <button type="button" onclick="validateform()" style="background-color:hsl(108, 99%, 62%); " >sign in</button>
+             
+        </form>
+       
+    </div>
+    
+    <div id="sidenav" class="sidenav">                                                
+                <ul>
+                    <li><a href="#HTML-intro">HTML Introduction</a></li>
+                    <li><a href="#html-tags">HTML Tags </a></li>
+                    <li><a href="#html-elements">HTML Elements </a></li>
+                    <li><a href="#html-attributes">HTML Attributes</a></li> 
+                    <li><a href="#html-formating">HTML Formating</a></li>
+                    <li><a href="#css-intro">CSS introduction</a></li>
+                    <li><a href="#CSS ─ SYNTAX ">CSS Syntax  </a></li>
+                    <li><a href="#CSS Font Families">CSS Font Families </a></li>
+                    <li><a href="#CSS LIST">CSS List </a></li>
+                    <li><a href="#viewpoint">CSS viewpoint </a></li>
+                    <li><a href="#js-intro">javaScript Introduction</a></li>
+                    <li><a href="#JavaScript Functions and Events">JavaScript Functions and Events </a></li>
+                    <li><a href="#JavaScript Statements">JavaScript Statements </a></li>
+                    <li><a href="#JavaScript Keywords">JavaScript Keywords </a></li>
+                    <li><a href="#JavaScript Output">JavaScript Output </a></li>
+                    <li><a href="#JavaScript Keywords">JavaScript Keywords </a></li>
+                    
+                    <li><a href="#lecture tutorials">lecture tutorials</a></li>
+              </ul>
+    </div>
+    <div id="main" class="mainbody">
+        <small><p id="HTML-intro">You need to sign in , for excessing many parts.!!!.</p></small><br><br>
+        <strong><h1 id="#"> INTRODUCTION TO HTML</h1><br><hr /></strong>
+        <h1>What is HTML?</h1><br>
+        <p>HTML is the standard markup language for creating Web pages</p>
+        <ul>
+            <li><p>HTML stands for Hyper Text Markup Language</p></li>
+            <li><p>HTML describes the structure of a Web page</p></li>
+            <li><p>HTML consists of a series of elements</p></li>
+        </ul>
+        
+        <h1>A Simple Example</h1>
+       
+        <img id="simplecode" src="simplecode.png" class="img00"><br><br>
+       
+         <img id="simplecoderun" src="simplecoderun.png" class="aimg00">
+        
+         <button id="simplecodebtn" class="btn01"><a id="btnlabel">run code</a></button>
+                 <br><br>
+        <p>Get some more details below</p><br>
+                
+            <a  ><img src="img01.png" style="width:10%;heigth:10%" class="img" id="img01" onclick="img1()"><br><p>click to see</p> </a>
+            <a  ><img src="img02.png" style="width:10%;heigth:10%" class="img" id="img02" onclick="img2()"><br><p>click to see</p> </a>
+            <a  ><img src="img03.png" style="width:10%;heigth:10%" class="img" id="img03" onclick="img3()"><br><p>click to see</p> </a>
+        
+        <div  class="main2" style="width: 100%">
+            <strong><h1 id="html-tags">HTML TAGS</h1><hr /></strong>
+            <p>HTML tags are element names surrounded by angle brackets:</p>
+
+            <p><strong>&lt;tagname&gt;</strong> content goes here... <strong>&lt; /tagname></strong></p>
+            <ul>
+                <li>HTML tags normally come in pairs like &lt;p> and &lt;/p>.</li>
+                <li>The first tag in a pair is the start tag, the second tag is the end tag.</li>
+                <li>The end tag is written like the start tag, but with a forward slash inserted before the tag name.</li>
+            </ul>
+           <br>
+            
+        </div>
+        <div class="html-img">
+            <h1>Line Break</h1>
+            <p>Whenever you use the &lt;br /> element, anything following it starts from the next line. This
+tag is an example of an empty element, where you do not need opening and closing tags, as
+                there is nothing to go in between them.</p>
+             <p>The &lt;br /> tag has a space between the characters br and the forward slash. If you omit this
+space, older browsers will have trouble rendering the line break, while if you miss the forward
+slash character and just use <br> it is not valid in XHTML.
+</p>
+            <a  ><img src="img04.png" style="width:10%;heigth:10%" class="img" id="img04" onclick="img04()"><br><p>click to see</p> </a>
+            <h1>Paragraph Tag</h1>
+            <p>The <p> tag offers a way to structure your text into different paragraphs. Each paragraph of
+text should go in between an opening &lt;p> and a closing &lt;/p> tag as shown below in the
+example:</p>
+            <a  ><img src="img05.png" style="width:10%;heigth:10%" class="img" id="img05" onclick="img05()"><br><p>click to see</p> </a>
+            <h1>Horizontal Line</h1>
+            <p>Horizontal lines are used to visually break-up sections of a document. The &lt;hr> tag creates
+a line from the current position in the document to the right margin and breaks the line
+accordingly.</p>
+            <a  ><img src="img06.png" style="width:10%;heigth:10%" class="img" id="img06" onclick="img06()"><br><p>click to see</p> </a>
+            <h1>Heading Tag</h1>
+            <a  ><img src="img07.png" style="width:10%;heigth:10%" class="img" id="img07" onclick="img07()"><br><p>click to see</p> </a>
+            
+        </div>
+        <div >
+            <strong><h1 id="html-elements">HTML ELEMENTS</h1></strong> <hr />      
+            <p>An HTML element is defined by a starting tag. If the element contains other content, it ends
+with a closing tag, where the element name is preceded by a forward slash as shown below
+with few tags:
+</p>
+            <div class="html-img"><a  ><img src="img08.png" style="width:10%;heigth:10%" class="img" id="img08" onclick="img08()"><br><p>click to see</p></a></div>
+            <br>
+          <h2>HTML Tag vs. Element</h2>
+              <p>An HTML element is defined by a starting tag. If the element contains other content, it ends
+with a closing tag.</p>
+            <p>For example, <p> is starting tag of a paragraph and <strong>&lt;/p></strong> is closing tag of the same
+            paragraph but <strong>&lt;p></strong>This is paragraph <strong>&lt;/p></strong> is a paragraph element.</p>
+            <br>
+            <h1>Nested HTML Elements</h1>
+            <p>It is very much allowed to keep one HTML element inside another HTML element:</p>
+             <div class="html-img"><a  ><img src="img09.png" style="width:10%;heigth:10%" class="img" id="img09" onclick="img09()"><br><p>click to see</p></a></div>
+            <br>
+              <strong> <h1 id="html-attributes"> HTML ATTRIBUTES</h1></strong><hr />
+            <p>We have seen few HTML tags and their usage like heading tags <strong>&lt;h1>, &lt;h2></strong>, paragraph tag
+<p> and other tags. We used them so far in their simplest form, but most of the HTML tags
+can also have attributes, which are extra bits of information.
+</p>
+            <p>An attribute is used to define the characteristics of an HTML element and is placed inside the
+                element's opening tag. All attributes are made up of two parts: a<strong> name</strong> and a <strong> alue</strong>:</p>
+            <h1></h1>
+            <div class="html-img"><a ><img src="img10.png" style="width:10%;heigth:10%" class="img" id="img10" onclick="img10()"><br><p>click to see</p></a></div>
+                <h1>Core Attributes</h1>
+                <p>The four core attributes that can be used on the majority of HTML elements (although not all)
+are:</p>
+                <ul>
+                    <l1>Id</l1>
+                     <l1>Title</l1>
+                     <l1>Class</l1>
+                     <l1>Style</l1>
+                </ul>
+            <h1>Id Attribute &amp; Title attibute</h1>
+                
+                <div class="html-img"><a><img src="img11.png" style="width:10%;heigth:10%" class="img" id="img11" onclick="img11()"><br><p>click to see</p></a></div>
+            <h1>Class Attribute &amp; Style Attribute</h1>
+            
+             <div class="html-img"><a><img src="img12.png" style="width:10%;heigth:10%" class="img" id="img12" onclick="img12()"><br><p>click to see</p></a></div>
+            
+           <strong><h1 id="html-formating">HTML Formatting Elements</h1></strong> <hr />
+            <p>HTML also defines special elements for defining text with a special meaning.<br>
+
+                HTML uses elements like<strong> &lt;b> and &lt;i></strong> for formatting output, like bold or italic text.<br>
+
+Formatting elements were designed to display special types of text</p><br>
+            <ul>
+                <li><strong>&lt;b></strong> - Bold text</li>
+                <li><strong>&lt;strong></strong> - Important text</li>
+                <li><strong>&lt;i></strong> - Italic text</li>
+                <li><strong>&lt;em></strong> - Emphasized text</li>
+                <li><strong>&lt;mark></strong> - Marked text</li>
+                <li><strong>&lt;small></strong> - Small text</li>
+                <li><strong>&lt;del></strong> - Deleted text</li>
+                <li><strong>&lt;ins></strong> - Inserted text</li>
+                <li><strong>&lt;sub></strong> - Subscript text</li>
+                <li><strong>&lt;sup></strong> - Superscript text</li>
+                
+            </ul>
+            
+            <strong><h1 id="css-intro">CSS INTRODUCTION</h1></strong><hr />
+            <p>Cascading Style Sheets, fondly referred to as CSS, is a simple design language intended to
+simplify the process of making web pages presentable.<br>
+CSS handles the look and feel part of a web page. Using CSS, you can control the color of the
+text, the style of fonts, the spacing between paragraphs, how columns are sized and laid out,
+what background images or colors are used, as well as a variety of other effects.<br>
+CSS is easy to learn and understand but it provides a powerful control over the presentation
+of an HTML document. Most commonly, CSS is combined with the markup languages HTML
+                or XHTML.<br></p>
+                <h1>Advantages of CSS</h1>
+                    <ul>
+                        <li><strong>CSS saves time</strong> - You can write CSS once and then reuse the same sheet in multiple
+HTML pages. You can define a style for each HTML element and apply it to as many
+web pages as you want</li>
+                        <li></li>
+                        <li><strong>Pages load faster</strong> - If you are using CSS, you do not need to write HTML tag
+attributes every time. Just write one CSS rule of a tag and apply it to all the
+occurrences of that tag. So, less code means faster download times.
+</li>
+                        <li><strong>Easy maintenance</strong> - To make a global change, simply change the style, and all the
+elements in all the web pages will be updated automatically.
+</li>
+                        <li><strong>Superior styles to HTML</strong> - CSS has a much wider array of attributes than HTML, so
+you can give a far better look to your HTML page in comparison to HTML attributes.</li>
+                        <li><strong>Multiple Device Compatibility</strong> - Style sheets allow content to be optimized for more
+than one type of device. By using the same HTML document, different versions of a
+website can be presented for handheld devices such as PDAs and cellphones or for
+printing.</li>
+                        <li><strong>Global web standards</strong> – Now HTML attributes are being deprecated and it is being
+recommended to use CSS. So it’s a good idea to start using CSS in all the HTML pages
+to make them compatible with future browsers.</li>
+                        
+                    </ul>
+            <strong><h1 id="CSS ─ SYNTAX ">CSS  SYNTAX </h1> </strong><hr/>
+            <p>A CSS comprises of style rules that are interpreted by the browser and then applied to the
+corresponding elements in your document. A style rule is made of three parts:
+</p>
+            <ul>
+                <li><strong>Selector:</strong> A selector is an HTML tag at which a style will be applied. This could be any
+tag like &lt;h1> or &lt;table> etc.</li>
+        <li><strong>Property:</strong> A property is a type of attribute of HTML tag. Put simply, all the HTML
+attributes are converted into CSS properties. They could be color, border, etc.</li>
+        <li><strong>Value:</strong> Values are assigned to properties. For example, color property can have the
+value either red or &#35;F1F1F1 etc.</li>
+                
+            </ul>
+            <h1>The Type Selectors</h1>
+            <p>This is the same selector we have seen above. Again, one more example to give a color to all
+level 1 headings:<br>
+                h1<br> &#123;<br>
+ color: &#35;36CFFF;<br>
+&#125;
+</p>
+            <h1>The Universal Selectors</h1>
+            <p>Rather than selecting elements of a specific type, the universal selector quite simply matches
+the name of any element type:<br>
+                &#42;<br>&#123;<br>
+ color: &#35;#000000;<br>
+&#125;
+            </p>
+                <h1>The Descendant Selectors &amp; The Class Selectors</h1>
+            <div class="html-img"><a><img src="img13.png" style="width:10%;heigth:10%" class="img" id="img13" onclick="img13()"><br><p>click to see</p></a></div>
+            
+
+
+            <h1 id="CSS Font Families">CSS Font Families</h1>
+            <p>In CSS, there are two types of font family names:</p>
+            <ul>
+                <li><strong>generic family</strong> - a group of font families with a similar look (like "Serif" or
+"Monospace")
+</li>
+                <li><strong>font family</strong> - a specific font family (like "Times New Roman" or "Arial")</li>
+            </ul>
+            
+            <table id="tab">
+                <tr>
+                    <td><strong>Generic family</strong> </td>
+                   <td><strong>Font family</strong> </td>
+                   <td><strong>Description</strong></td>
+                </tr>
+                <tr>
+                    <td>Serif </td>
+                    <td>Times New Roman Georgia</td>
+                    <td>Serif fonts have small lines at the ends on some characters</td>
+                </tr>
+                <tr>
+                    <td>Sans-serif</td>
+                    <td>Arial Verdana</td>
+                    <td>"Sans" means without - these fonts do not have the lines at the ends of characters</td>
+                </tr>
+                <tr>
+                    <td>Monospace</td>
+                    <td>Courier New Lucida Console</td>
+                    <td>All monospace characters have the same width</td>
+                </tr>
+            </table>
+            <p>
+                <br><br>
+                <strong>Font Family</strong><br>
+The font family of a text is set with the font-family property.<br>
+The font-family property should hold several font names as a "fallback" system. If the
+browser does not support the first font, it tries the next font, and so on.<br>
+Start with the font you want, and end with a generic family, to let the browser pick a
+similar font in the generic family, if no other fonts are available.<br>
+                <strong>Note:</strong> If the name of a font family is more than one word, it must be in quotation marks,
+like: "Times New Roman".<br>
+More than one font family is specified in a comma-separated list:<br><br>
+                <strong>Example</strong><br>
+p &#123;<br>
+ font-family: "Times New Roman", Times, serif;<br>
+}<br>
+                <br>
+                <br>
+                <strong>Font Style</strong><br>
+The font-style property is mostly used to specify italic text.<br>
+                This property has three values:<br></p>
+                <ul>
+                    <li><strong>normal</strong> - The text is shown normally</li>
+                    <li><strong>italic </strong>- The text is shown in italics</li>
+                    <li><strong>oblique</strong> - The text is "leaning" (oblique is very similar to italic, but less supported)</li>
+            </ul>
+            <br>
+            <br>
+
+            <p><strong>Example</strong><br>
+            
+p.normal {<br>
+ font-style: normal;<br>
+}<br>
+p.italic {<br>
+ font-style: italic;<br>
+}<br>
+p.oblique {<br>
+font-style: oblique;<br>
+}<br></p>
+            <p><strong>Font Size</strong><br><br>
+The font-size property sets the size of the text.<br>
+Being able to manage the text size is important in web design. However, you should not
+use font size adjustments to make paragraphs look like headings, or headings look like
+paragraphs.<br>
+            Always use the proper HTML tags, like <strong>&lt;h1> - &lt;h6></strong> for headings and <strong> &lt;p></strong> for
+paragraphs.<br>
+            The font-size value can be an absolute, or relative size.<br></p>
+            <strong>Absolute size:</strong><br>
+            <ul>
+                <li>Sets the text to a specified size</li>
+                <li> Does not allow a user to change the text size in all browsers (bad for accessibility reasons)</li>
+                <li>Absolute size is useful when the physical size of the output is known</li>
+            </ul><br>
+
+
+            <strong>Relative size:</strong><br>
+            <ul>
+                <li>Sets the size relative to surrounding elements</li>
+                <li>Allows a user to change the text size in browsers</li>
+            </ul>
+             <p>Set Font Size With Pixels<br>
+            Setting the text size with pixels gives you full control over the text size:<br>
+            <strong>Example</strong><br>
+h1 {<br>
+ font-size: 40px;<br>
+}<br>
+h2 {<br>
+ font-size: 30px;<br>
+}<br>
+p {<br>
+ font-size: 14px;<br>
+            }<br>
+            </p>
+            
+            
+            <strong><h1 id="CSS LIST">CSS LIST</h1></strong><hr />
+            <p>In HTML, there are two main types of lists:</p>
+            <ul>
+                <li>unordered lists (&lt;ul>) - the list items are marked with bullets</li>
+                <li>ordered lists (&lt;ol>) - the list items are marked with numbers or letters
+</li>
+                
+            </ul>
+            <a><img src="img14.png" style="width:10%;heigth:10%" class="img"  onclick="img14()"><br> </a><p>click to see</p>
+          
+            <strong><h1 id="viewpoint">Responsive Web Design - The Viewport</h1></strong><hr />
+            <p>The viewport is the user's visible area of a web page.<br>
+The viewport varies with the device, and will be smaller on a mobile phone than on a
+computer screen.<br>
+Before tablets and mobile phones, web pages were designed only for computer screens,
+and it was common for web pages to have a static design and a fixed size.<br>
+Then, when we started surfing the internet using tablets and mobile phones, fixed size
+web pages were too large to fit the viewport. To fix this, browsers on those devices
+scaled down the entire web page to fit the screen.<br>
+This was not perfect!! But a quick fix.<br>
+                <strong>Setting The Viewport</strong><br>
+HTML5 introduced a method to let web designers take control over the viewport,
+                through the <strong>&lt;meta></strong> tag.<br>
+You should include the following <meta> viewport element in all your web pages:<br>
+                <strong>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"></strong><br>
+                A <strong>&lt;meta> </strong>viewport element gives the browser instructions on how to control the page's
+dimensions and scaling.<br>
+The width=device-width part sets the width of the page to follow the screen-width of
+the device (which will vary depending on the device).<br>
+The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the
+browser.<br>
+                <strong>RWD - Media Queries</strong><br><br>
+Media query is a CSS technique introduced in CSS3.<br>
+It uses the @media rule to include a block of CSS properties only if a certain condition
+is true.<br><br>
+                <strong>Always Design for Mobile First</strong><br>
+Mobile First means designing for mobile before designing for desktop or any other
+device (This will make the page display faster on smaller devices).<br>
+This means that we must make some changes in our CSS.<br>
+Instead of changing styles when the width gets smaller than 768px, we should change
+the design when the width gets larger than 768px<br><br>
+                <strong>Orientation: Portrait / Landscape</strong><br>
+Media queries can also be used to change layout of a page depending on the orientation
+of the browser.<br>
+You can have a set of CSS properties that will only apply when the browser window is
+wider than its height, a so called "Landscape" orientation:<br>
+                <strong>Example</strong><br>
+The web page will have a lightblue background if the orientation is in landscape mode:<br>
+@media only screen and (orientation: landscape) {<br>
+ body {<br>
+ background-color: lightblue;<br>
+ }<br>
+}<br><br>
+                <strong>Hide Elements With Media Queries</strong><br>
+                
+Another common use of media queries, is to hide elements on different screen sizes:<br>
+I will be hidden on small screens.<br>
+                <strong>Example</strong><br>
+                @media only screen and (max-width: 600px) {<br>
+div.example {<br>
+ display: none;<br>
+ }<br>
+                }<br>
+
+            </p>
+            <strong><h1 id="js-intro" >JAVASCRIPT</h1></strong><hr/>
+            <p>JavaScript is a very powerful client-side scripting language. JavaScript is a lightweight,
+interpreted programming language.JavaScript is used mainly for enhancing the
+interaction of a user with the webpage. In other words, you can make your webpage
+more lively and interactive, with the help of JavaScript. JavaScript is also being used
+widely in game development and Mobile application development.</p><br>
+            <p><strong>JavaScript Can Change HTML Content</strong><br>
+One of many JavaScript HTML methods is getElementById().<br>
+This example uses the method to "find" an HTML element (with id="demo") and
+changes the element content (innerHTML) to "Hello JavaScript":<br><br>
+</p>
+       <a><img src="img14.png" style="width:10%;heigth:10%" class="img"  onclick="img15()"><br> </a><p>click to see</p>
+           
+            <strong><h1 id="JavaScript Functions and Events">JavaScript Functions and Events</h1> </strong>
+            <p>
+            
+        
+A JavaScript function is a block of JavaScript code, that can be executed when "called"
+for.<br>
+For example, a function can be called when an event occurs, like when the user clicks
+a button.<br>
+JavaScript in &lt;head> or &lt;body><br>
+You can place any number of scripts in an HTML document.<br>
+Scripts can be placed in the &lt;body>, or in the &lt;head> section of an HTML page, or in
+both.<br><br>
+                <strong>Example</strong><br>
+&lt;!DOCTYPE html><br>
+&lt;html><br>
+&lt;head><br>
+&lt;script><br>
+function myFunction() {<br>
+ document.getElementById("demo").innerHTML = "Paragraph changed.";<br>
+}<br>
+&lt;/script><br>
+&lt;/head><br>
+&lt;body><br>
+&lt;p id="demo">A Paragraph&lt;/p><br>
+&lt;button type="button" onclick="myFunction()">Try it&lt;/button><br>
+&lt;/body><br>
+&lt;/html><br>
+JavaScript - Placement in HTML File<br>
+There is a flexibility given to include JavaScript code anywhere in an HTML
+document. However the most preferred ways to include JavaScript in an HTML file
+                are as follows −<br>
+            </p>
+            <ul>
+                <li>Script in &lt;head>...&lt;/head> section.</li>
+                <li>Script in &lt;body>...&lt;/body> section.</li>
+                <li>Script in &lt;body>...&lt;/body> and &lt;head>...&lt;/head> sections.</li>
+                <li>Script in an external file and then include in &lt;head>...&lt;/head> section.</li>
+            </ul>
+            <p><br><br>
+                <strong>External JavaScript</strong><br>
+External scripts are practical when the same code is used in many different web
+pages.JavaScript files have the file extension .js.<br>
+To use an external script, put the name of the script file in the src (source) attribute of
+a &lt;script> tag:<br>
+&lt;script src="myScript.js">&lt;/script><br>
+You can place an external script reference in &lt;head> or &lt;body> as you like.The script
+will behave as if it was located exactly where the &lt;script> tag is located.<br>
+            </p><br><br><br>
+            
+            <strong> <h1 id="JavaScript Statements">JavaScript Statements</h1> </strong><hr/><br>
+            
+            <p>
+A computer program is a list of "instructions" to be "executed" by a computer.<br>
+In a programming language, these programming instructions are called statements.<br>
+A JavaScript program is a list of programming statements<br>.
+JavaScript statements are composed of:<br>
+Values, Operators, Expressions, Keywords, and Comments.<br>
+This statement tells the browser to write "Hello Dolly." inside an HTML element with
+id="demo":<br>
+&lt;!DOCTYPE html><br>
+&lt;html><br>
+&lt;body><br>
+&lt;h2>JavaScript Statements&lt;/h2><br>
+&lt;p>In HTML, JavaScript statements are executed by the browser.&lt;/p><br>
+                &lt;p id="demo">&lt;/p><br>
+&lt;script><br>
+document.getElementById("demo").innerHTML = "Hello Dolly.";<br>
+&lt;/script><br>
+&lt;/body><br>
+&lt;/html><br>
+Most JavaScript programs contain many JavaScript statements.<br>
+The statements are executed, one by one, in the same order as they are written.<br>
+JavaScript programs (and JavaScript statements) are often called JavaScript code.<br><br>
+                <strong>Semicolons ;</strong><br>
+Semicolons separate JavaScript statements.<br>
+Add a semicolon at the end of each executable statement:<br>
+                <strong>Example:</strong><br>
+var a, b, c; // Declare 3 variables<br>
+a = 5; // Assign the value 5 to a<br>
+b = 6; // Assign the value 6 to b<br>
+c = a + b; // Assign the sum of a and b to c<br>
+When separated by semicolons, multiple statements on one line are allowed:<br>
+a = 5; b = 6; c = a + b;<br>
+On the web, you might see examples without semicolons.<br>
+Ending statements with semicolon is not required, but highly recommended.<br><br>
+                <strong>JavaScript White Space</strong><br>
+JavaScript ignores multiple spaces. You can add white space to your script to make it
+more readable.<br>
+The following lines are equivalent:<br>
+var person = "Hege";<br>
+var person="Hege";<br>
+A good practice is to put spaces around operators ( = + - * / ):<br>
+var x = y + z;<br>
+                <strong>JavaScript Line Length and Line Breaks</strong><br>
+For best readability, programmers often like to avoid code lines longer than 80
+characters.<br>
+If a JavaScript statement does not fit on one line, the best place to break it is after an
+operator:<br>
+document.getElementById("demo").innerHTML =<br>
+"Hello Dolly!";<br>
+JavaScript Code Blocks<br>
+JavaScript statements can be grouped together in code blocks, inside curly brackets<br>
+{...}.<br>
+The purpose of code blocks is to define statements to be executed together.<br>
+One place you will find statements grouped together in blocks, is in JavaScript
+functions:<br>
+function myFunction() {<br>
+ document.getElementById("demo1").innerHTML = "Hello Dolly!";<br>
+ document.getElementById("demo2").innerHTML = "How are you?";<br>
+}<br>
+                
+            </p>
+            <br>
+            <br>
+            <br>
+            
+            <strong><h1 id="JavaScript Keywords">JavaScript Keywords </h1></strong><hr/><br>
+            <p>
+
+JavaScript statements often start with a keyword to identify the JavaScript action to
+be performed.<br>
+                Here is a list of some of the keywords you will learn about in this tutorial:<br>
+            </p>
+            <a  ><img src="img15.png" style="width:10%;heigth:10%" id="img15" class="imga"  ><br> <p class="imga">click to see</p></a>
+            
+            
+            <table id="tab" class="table02">
+                <tr>
+                    <td><strong>Keywords</strong></td>
+                    <td><strong>Description</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>break</strong> </td>
+                   <td><strong>Terminates a switch or a loop</strong> </td>
+                </tr>
+                <tr>
+                    <td>contiue </td>
+                    <td>Jumps out of a loop and starts at the top</td>
+                </tr>
+                <tr>
+                    <td>debugger</td>
+                    <td>Stops the execution of JavaScript, and calls (if available) the debugging function </td>
+                </tr>
+                <tr>
+                    <td>do...while</td>
+                    <td>Executes a block of statements, and repeats the block, while a condition is truee</td>
+                </tr>
+                 <tr>
+                    <td>for </td>
+                   <td>Marks a block of statements to be executed, as long as a condition is true </td>
+                </tr>
+                 <tr>
+                    <td>funtion </td>
+                   <td>Declares a function </td>
+                </tr>
+                 <tr>
+                    <td>if...else </td>
+                   <td>Marks a block of statements to be executed, depending on a condition </td>
+                </tr>
+                 <tr>
+                    <td>return </td>
+                   <td>Exits a functio> </td>
+                </tr>
+                 <tr>
+                    <td>switch </td>
+                   <td>Marks a block of statements to be executed, depending on different cases </td>
+                </tr>
+                 <tr>
+                    <td>try...catch </td>
+                   <td>Implements error handling to a block of statements </td>
+                </tr>
+                 <tr>
+                    <td>var </td>
+                   <td>Declares a variable </td>
+                </tr>
+            </table>
+            
+            
+            <strong><h1 id="JavaScript Output">JavaScript Output</h1> </strong><hr/>
+            <br>
+            <strong><p>JavaScript can "display" data in different ways:</p></strong><br>
+            <ul>
+                <li>Writing into an HTML element, using innerHTML.</li>
+                <li>Writing into the HTML output using document.write().</li>
+                <li>Writing into an alert box, using window.alert().</li>
+                <li>Writing into the browser console, using console.log().</li>
+            </ul>
+            <br>
+            <p>
+
+
+                <strong>Using innerHTML</strong><br>
+To access an HTML element, JavaScript can use
+the document.getElementById(id) method.<br>
+The id attribute defines the HTML element. The innerHTML property defines the
+HTML content:<br>
+<!DOCTYPE html><br>
+&lt;html><br>
+&lt;body><br>
+&lt;h1>My First Web Page&lt;/h1><br>
+&lt;p>My First Paragraph&lt;/p><br>
+&lt;p id="demo">&lt;/p><br>
+&lt;script><br>
+document.getElementById("demo").innerHTML = 5 + 6;<br>
+&lt;/script><br>
+&lt;/body><br>
+&lt;/html><br>
+            </p>
+            <br>
+            
+            <p>for more click below</p><br><br>
+            
+            <a ><img src="img14.png" style="width:10%;heigth:10%" class="img"  onclick="img16()"><br> </a><p>click to see</p>
+        </div>
+        
+        
+        <div class="videos">
+            <strong><h1 id="lecture tutorials">lecture tutorials</h1></strong>
+            
+            <iframe width="48%" height="400" src="https://www.youtube.com/embed/khfvRrksUlU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <iframe width="48%" height="400" src="https://www.youtube.com/embed/dACGTuaGoew" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <iframe width="48%" height="400" src="https://www.youtube.com/embed/rMclo86In0Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            
+           <iframe width="48%" height="400" src="https://www.youtube.com/embed/7-7dhqM6FLM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <iframe width="48%" height="400" src="https://www.youtube.com/embed/4glbjmPPcJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <iframe width="48%" height="400" src="https://www.youtube.com/embed/Mnsx3HWl1HQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <iframe width="48%" height="400" src="https://www.youtube.com/embed/7YqIK5csOqg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <iframe width="48%" height="400" src="https://www.youtube.com/embed/ehmDUld28Bc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            
+            <iframe width="48%" height="400" src="https://www.youtube.com/embed/E1OLriI3VaY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            
+            <iframe width="48%" height="400" src="https://www.youtube.com/embed/gajbUVr7Rrk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            
+            <iframe width="48%" height="400" src="https://www.youtube.com/embed/Q9KnKaIhKHc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <iframe width="48%" height="400" src="https://www.youtube.com/embed/WsicsrmeV30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <iframe width="48%" height="400" src="https://www.youtube.com/embed/Y_7aP_aWuXk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            
+            <iframe width="48%" height="400" src="https://www.youtube.com/embed/kErUVPqzIDg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            
+            <iframe width="48%" height="400" src="https://www.youtube.com/embed/guzeUDQLeeU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            
+            <iframe width="48%" height="400" src="https://www.youtube.com/embed/iuYo9cZGsho" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            
+            <iframe width="48%" height="400" src="https://www.youtube.com/embed/oUIrVTtYzzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            
+            <iframe width="48%" height="400" src="https://www.youtube.com/embed/G3GkqpKvlf4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <iframe width="48%" height="400" src="https://www.youtube.com/embed/HyAnLloO09w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            
+            <iframe width="48%" height="400" src="https://www.youtube.com/embed/rMtzh_1EuYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            
+            
+            
+            
+            
+
+            
+        </div>
+        
+ 
+      <footer>
+            <hr />
+        <p>
+              @engineering gurukul</p></footer>
+    </div>
+
+     
+</body>
+</html>

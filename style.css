@@ -1,0 +1,342 @@
+*{
+        margin: 0;
+        padding: 0;
+        font-family: tahoma;
+   
+ }
+/*menubar*/
+
+.menubar
+{
+ 
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+  background:#282939;
+    height: 15%;
+    top:0;
+    background-color:hsl(108, 99%, 62%);
+border-bottom-color: lightslategrey 3px;
+}
+.menubar menu
+{
+	margin-left: 60%;
+    float:right;
+}
+.menu ul{
+    float: right;
+    top:20px;
+    padding-top: 20px;
+}
+.menubar ul li
+{
+	display: inline-block ;
+}
+
+.logo img
+{
+	margin-top: ;
+    float: left;
+    z-index: 1;
+    width :20%;
+    height: 15%
+}
+.menubar ul li a:hover
+{
+    text-decoration: none;
+    color:black;
+    font-family: bold;
+    text-shadow: 10px;
+   
+}
+.menubar ul li a
+{
+    text-decoration: none;
+	padding:20px;
+	font-family:sans-serif;
+	color: white;
+	font-size: 18px;
+
+}
+
+/*login*/
+
+.arrowup
+{
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #E4E8E3 ;
+    right: 32px;
+    top: 54px;
+    display: none;
+    position: fixed;
+    
+}
+.login-form
+{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    background-color: #E4E8E3;
+    right: 8px;
+    top: 70px;
+    border-radius: 3px;
+    border-bottom: 5px solid grey;
+    display: none;
+    position:fixed;
+}
+.login-form form
+{
+    width: 250px;
+    margin: 25px auto;
+    font-size: 16px;
+    font-family: sans-serif,Arial;
+    color:gray;
+    letter-spacing: -0.05em;
+    
+}
+
+input[type="text"],
+input[type="password"]
+{
+    width: 220px;
+    height: 30px;
+    border: 0px;
+    outline: none;
+    background-color: #F7FEF5;
+    font-size: 16px;
+    
+}
+button
+{
+    width: 90%;
+    height: 35px;
+    background-color: hsl(108, 99%, 62%);
+    font-size: 20px;color: black;
+    outline: none;
+    border: 0px;
+    border-radius: 3px;
+    letter-spacing: -0.05em;
+}
+button:hover
+{
+    background: grey;
+    
+}
+
+
+
+/*sidenav*/
+
+.sidenav {
+  height:100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top:15%;
+  left: 0;
+    bottom:15%;
+    margin-bottom: 15%;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+    padding-bottom:500px;
+    
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: hsl(108, 99%, 62%);
+}
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width:8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(108, 99%, 62%); 
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+
+}
+.mainbody
+{
+    margin-left: 160px;
+  margin-top: 15%;
+    padding:35px;
+    
+}
+.abody
+{
+   position: relative;
+  margin-top: 9%;
+    padding:25px;
+    width:100%;
+    height:auto;
+   
+    background-color: white;
+}
+
+
+
+
+.html-img
+{
+    width: 96%;
+    height: auto;
+    border: 2px;
+    border-radius: 2px;
+    border-color: hsl(108, 99%, 62%); 
+    padding: 18px;
+    margin: 10px;
+    
+}
+
+h1
+{
+    background-color: hsla(108, 99%, 62%,0.8);
+    text-shadow: 4px;
+    font-size:40px;
+    font-style: oblique bold;
+    padding-left: 20px;
+}
+p,li
+{
+    font-family: "Comic Sans MS", Comic Sans, cursive;
+    font-size: 20px;
+    line-height: 30px
+}
+
+
+#tab {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tab td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tab tr:nth-child(even){background-color: hsla(108, 99%, 62%, 0.4);}
+
+#tab tr:hover {background-color: hsl(108, 99%, 62%) ;}
+#tab th {
+ 
+}
+
+
+footer
+{
+    background-color: darkgrey;
+    height: 15%;
+    color: whitesmoke;
+    padding-left: 30px;
+    padding-top: 0;
+    
+}
+
+
+.table02
+{
+    display: none;
+}
+
+.aimg00
+{
+    display: none;
+}
+
+
+
+.videos
+{
+    padding:25px;
+    width: 100%;
+    background-color: hsla(108, 99%, 62%, 0.4);
+    align-content: center
+}
+
+.videos iframe
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.lock:hover
+{
+    color: black;
+}
+
+.open
+{
+    display:none;
+}
+
+.icoFacebook
+{
+    font-size: 50px;
+    color:hsl(108, 99%, 62%) ;
+}
+
+.icoInsta
+{
+    font-size: 50px;
+    color:hsl(108, 99%, 62%) ;
+    padding: 20px;
+}
+
+.icoInsta:hover
+{color: black;}
+
+.icoFacebook:hover
+{color: black;}
+.myphoto
+{
+    float: left 0;
+    float :right ;
+    border-radius: 50%;
+    width:400px;
+    height: 400px;
+}
+.footer
+{
+    background-color: darkgrey;
+    height: 100px;
+    color: whitesmoke;
+    padding-left: 30px;
+    padding-top: 0;
+    position: relative;
+    bottom: 0px;
+ 
+    
+}
